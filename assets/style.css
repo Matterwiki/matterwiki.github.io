@@ -1,0 +1,56 @@
+
+.fa-lg {
+  font-size: 50px;
+}
+.logo {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  max-height: 40px;
+  width: auto;
+}
+.gray-text, p {
+  color: #7f7f7f;
+}
+.center-align {
+  text-align: center;
+}
+.header-image {
+  padding: 5em;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+.section {
+  margin-bottom: 2em;
+  padding: 30px 20px 40px 20px;
+  border-bottom: 1px solid #efefef
+}
+.image-section img {
+  width: 100%;
+}
+.thumbnail {
+  width: 100%;
+}
+p {
+  font-size: 20px;
+}
+.pink-background {
+  background-color: #ff0066;
+  color: #fff;
+}
+.btn-default {
+  background-color: #da045a;
+}
+.btn-default:hover {
+  background-color: #f20061;
+}
+html {
+  background-color: #ff0066;
+}
+.content-block {
+  max-width: 700px;
+  margin: 0px auto;
+}
+body {
+  line-height: 2.5em;
+}
