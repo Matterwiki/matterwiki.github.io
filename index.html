@@ -4,8 +4,8 @@
     <title>Matterwiki - Simple wiki for teams</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body class="container">
-    <div class="row section pink-background">
+  <body class="container pink-background">
+    <div class="row section">
     <div class="row">
       <div class="col-md-6 col-sd-12">
 
@@ -67,14 +67,30 @@
             No complex formatting or structure to follow.<br/>
             The editing environment you're comfortable in.<br/>
           </p>
-          <p class="help-block">WYSIWYG = What you see is what you get.</p>
+          <p>WYSIWYG = What you see is what you get.</p>
       </div>
     </div>
-    <div class="row section image-section center-align">
-        <i class="fa fa-code fa-lg" aria-hidden="true"></i>
-      <h2><b>Under the hood</b></h2>
-      <div class="content-block center-align">
-          <img src="./assets/technologies.png" />
+    <div class="row section center-align">
+        <i class="fa fa-wrench fa-lg" aria-hidden="true"></i>
+      <h2><b>Setup Instructions</b></h2>
+      <div class="content-block left-align">
+          <p>
+            <ol>
+    <li>Open terminal
+    <li>Clone the repository using this command<br/><span class="code">git clone http://github.com/matterwiki/matterwiki</span>
+    <li>Change directory to project code using <span class="code">cd matterwiki</span>
+    <li>Run <span class="code">npm install</span>
+    <li>Edit <span class="code">config.js</span> (present in the project root) and change the auth_secret value with any secret phrase. NOTE: This phrase will be used to encode and decode your access tokens. Keep it safe and private
+    <li>run <span class="code">npm run build</span>
+    <li>run <span class="code">node index</span>
+    <li>Head to <span class="code">yoururl.com/#/setup</span> and create the Admin account.
+      <br/>
+    Replace <span class="code">yoururl.com</span> with your URL. If you're running locally, replace with <span class="code">localhost:5000</span>
+    <li>Login with your new admin account and head to the Admin dashboard.
+    <li>Create topics and add users to your Wiki.
+
+            </ol>
+          </p>
       </div>
     </div>
     <p>Released under MIT license<br/>
