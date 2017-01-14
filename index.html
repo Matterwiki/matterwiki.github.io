@@ -1,21 +1,17 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Matterwiki - Simple wiki for teams</title>
+    <title>Matterwiki - A simple and beautiful wiki for teams</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body class="container pink-background">
-    <div class="row section">
+  <body class="container-fluid">
+    <div class="row section center-align pink-background">
     <div class="row">
-      <div class="col-md-6 col-sd-12">
-
+      <div class="col-md-12 col-sd-12">
         <img src="./assets/logo-white.png" class="logo" />
         <h1><b>A simple and beautiful wiki for teams</b></h1>
-        <h3>People use it to store documentation, notes, culture guidelines, employee onboarding content and everything they want to.</h3>
+        <h3 class="content-block">People use it to store documentation, notes, culture guidelines, employee onboarding content and everything they want to.</h3>
         <br/>
-      </div>
-      <div class="col-md-6 col-sd-12">
-        <img src="./assets/header-image.png" class="header-image" />
       </div>
     </div>
     <div class="row">
@@ -27,7 +23,7 @@
       </div>
     </div>
   </div>
-
+<div class="gray-text">
     <div class="row section center-align">
       <div class="col-md-6 col-sd-12">
         <i class="fa fa-question-circle fa-lg" aria-hidden="true"></i>
@@ -70,6 +66,47 @@
           <p>WYSIWYG = What you see is what you get.</p>
       </div>
     </div>
+    <div class="row section image-section center-align">
+      <i class="fa fa-desktop fa-lg" aria-hidden="true"></i>
+      <h2><b>Screenshots</b></h2>
+      <div class="center-align">
+        <p>
+          <i>Simple and Beautiful</i>, the two qualities we maintain on every screen.
+        </p>
+        <div class="image-grid">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./assets/screenshot1.png" >
+            <p>Browse Articles</p>
+          </div>
+          <div class="col-md-6">
+            <img src="./assets/screenshot2.png" >
+            <p>Create or Edit Articles</p>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-md-6">
+            <img src="./assets/screenshot3.png" >
+              <p>Read Articles</p>
+          </div>
+          <div class="col-md-6">
+            <img src="./assets/screenshot4.png" >
+              <p>Browse Revisions</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    <div class="row section image-section center-align">
+      <i class="fa fa-terminal fa-lg" aria-hidden="true"></i>
+      <h2><b>Under the hood</b></h2>
+      <div class="center-align">
+        <p>Matterwiki uses a Node.js API with a React.js front-end and Sqlite3 for the database.</p>
+        <img src="./assets/technologies.png" >
+        <p>As the app is built atop a JSON API, it is simple to integrate your Wiki with your mobile app or blog. For more, read the <a href="https://github.com/Matterwiki/Matterwiki/blob/master/API.md">API documentation</a>.</p>
+      </div>
+    </div>
     <div class="row section center-align">
         <i class="fa fa-wrench fa-lg" aria-hidden="true"></i>
       <h2><b>Setup Instructions</b></h2>
@@ -93,10 +130,15 @@
           </p>
       </div>
     </div>
-    <p>Released under MIT license<br/>
-<a class="github-button" href="https://github.com/Matterwiki/Matterwiki/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/Matterwiki/Matterwiki/network" data-count-api="/repos/Matterwiki/Matterwiki#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork Matterwiki/Matterwiki on GitHub">Fork</a>
-<a class="github-button" href="https://github.com/Matterwiki/Matterwiki" data-icon="octicon-star" data-style="mega" data-count-href="/Matterwiki/Matterwiki/stargazers" data-count-api="/repos/Matterwiki/Matterwiki#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star Matterwiki/Matterwiki on GitHub">Star</a>
-</p>
+    <div class="row center-align">
+      <img src="./assets/beer.png" class="beer-icon"><br/>
+      <br/>
+      <p>Released under MIT license<br/>
+      <a class="github-button" href="https://github.com/Matterwiki/Matterwiki/fork" data-icon="octicon-repo-forked" data-style="mega" data-count-href="/Matterwiki/Matterwiki/network" data-count-api="/repos/Matterwiki/Matterwiki#forks_count" data-count-aria-label="# forks on GitHub" aria-label="Fork Matterwiki/Matterwiki on GitHub">Fork</a>
+      <a class="github-button" href="https://github.com/Matterwiki/Matterwiki" data-icon="octicon-star" data-style="mega" data-count-href="/Matterwiki/Matterwiki/stargazers" data-count-api="/repos/Matterwiki/Matterwiki#stargazers_count" data-count-aria-label="# stargazers on GitHub" aria-label="Star Matterwiki/Matterwiki on GitHub">Star</a>
+      </p>
+    </div>
+</div>
 <link rel="stylesheet" href="./assets/bootstrap.css" />
 <link rel="stylesheet" href="./assets/style.css" />
 <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
