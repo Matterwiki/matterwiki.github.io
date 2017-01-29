@@ -131,22 +131,25 @@
       <h2><b>Setup Instructions</b></h2>
       <div class="content-block left-align">
           <p>
+            You need to have <span class="code">Node</span> and <span class="code">npm</span> installed on your system.
             <ol>
-    <li>Open terminal
-    <li>Clone the repository using this command<br/><span class="code">git clone http://github.com/matterwiki/matterwiki</span>
-    <li>Change directory to project code using <span class="code">cd matterwiki</span>
-    <li>Run <span class="code">npm install</span>
-    <li>Edit <span class="code">config.js</span> (present in the project root) and change the auth_secret value with any secret phrase. NOTE: This phrase will be used to encode and decode your access tokens. Keep it safe and private
-    <li>run <span class="code">npm run build</span>
-    <li>run <span class="code">node index</span>
-    <li>Head to <span class="code">yoururl.com/#/setup</span> and create the Admin account.
-      <br/>
-    Replace <span class="code">yoururl.com</span> with your URL. If you're running locally, replace with <span class="code">localhost:5000</span>
-    <li>Login with your new admin account and head to the Admin dashboard.
-    <li>Create topics and add users to your Wiki.
-
+              <li>Clone this repository <span class="code">git clone http://github.com/matterwiki/matterwiki</span></li>
+              <li>Run <span class="code">npm install</span></li>
+              <li>Edit <span class="code">config.js</span> (present in the project root) and change the <span class="code">auth_secret</span> value with any secret phrase.<br/>NOTE: This phrase will be used to encode and decode your access tokens. Keep it safe and private</li>
+              <li>run <span class="code">npm run build</span></li>
+              <li>At this point, running this with a process manager like PM2 would ensure that this is a background process and doesn't die out. A sample way of starting the app would be:</li>
+              <span class="code">NODE_ENV=production PORT=8000 pm2 start index.js --name "matterwiki"</span><br/>
+                  <i>Some points to note here :<br/>
+                      NODE_ENV could take one of these two values, dev or production.<br/>
+                      PORT is optional. If it is not specified, then 5000 would be used.<br/></i>
+              However, if you do not need all this, running <span class="code">npm start</span> should boot up the production build of the app.</li>
+              <li>Head to <span class="code">yoururl.com/#/setup</span> and create the Admin account.</li>
+              <li>Replace <span class="code">yoururl.com</span> with your URL. If you're running locally, replace with localhost:5000</li>
+              <li>Login with your new admin account and head to the Admin dashboard.</li>
+              <li>Create topics and add users to your Wiki.</li>
             </ol>
           </p>
+          <p>Docker instructions are available <a href="http://github.com/matterwiki/matterwiki">here</a>.</p>
       </div>
     </div>
     <div class="row center-align">
