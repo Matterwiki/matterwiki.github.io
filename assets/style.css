@@ -16,7 +16,7 @@
   }
 }
 .gray-text {
-  color: #7f7f7f;
+  color: #4d4d4d;
 }
 .gray-text .fa {
   color: #ff0066;
@@ -34,7 +34,6 @@
 .section {
   margin-bottom: 2em;
   padding: 30px 20px 40px 20px;
-  border-bottom: 1px solid #7f7f7f;
 }
 .image-section img {
   width: 100%;
@@ -59,10 +58,11 @@ p {
   color: #fff;
 }
 .btn-default {
-  background-color: #da045a;
+  background-color: #ff0066;
+  border: 1px solid #da045a;
 }
 .btn-default:hover {
-  background-color: #f20061;
+  background-color: #da045a;
 }
 html {
   background-color: #ff0066;
@@ -73,12 +73,12 @@ html {
 }
 body {
   line-height: 2.5em;
-  color: #fff;
+  color: #4d4d4d;
 }
 
 .code {
   background-color: #efefef;
-  color: #7f7f7f;
+  color: #4d4d4d;
   padding: 4px;
 }
 ol {
