@@ -64,6 +64,9 @@ p {
 .btn-default:hover {
   background-color: #da045a;
 }
+.btn-lg {
+  font-size: 20px;
+}
 html {
   background-color: #ff0066;
 }
