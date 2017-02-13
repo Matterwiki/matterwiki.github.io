@@ -103,3 +103,11 @@ ol {
   margin-top: 15px;
   margin-bottom: 15px;
 }
+
+.subscription-block {
+  background-color: #efefef;
+}
+.subscription-form {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
